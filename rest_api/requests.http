@@ -1,0 +1,21 @@
+@devUrl = http://localhost:3000
+@prodUrl = http://localhost:3000
+@host = {{devUrl}}
+
+### List all messages
+GET {{host}}/messages
+?order=ASC
+&limit=10
+
+
+### Create a new message
+POST {{host}}/messages
+content-type: application/json
+
+{
+  "content": "hi there"
+}
+
+
+### Get a particular message
+GET {{host}}/messages/123
