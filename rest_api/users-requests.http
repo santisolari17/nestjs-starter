@@ -7,6 +7,25 @@ POST {{host}}/auth/signup
 content-type: application/json
 
 {
-  "email": "scorpion@nrs.com",
-  "password": "getoverhere123"
+  "email": "subzero@nrs.com",
+  "password": "askformercy"
+}
+
+### find user by id
+GET {{host}}/auth/1
+content-type: application/json
+
+### find user by email
+GET {{host}}/auth?email=subzero@nrs.com
+content-type: application/json
+
+### delete user by id
+DELETE {{host}}/auth/2
+
+### Update an user
+PATCH {{host}}/auth/3
+content-type: application/json
+
+{
+  "email": "cybersubzero@nrs.com"
 }
