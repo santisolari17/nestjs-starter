@@ -13,7 +13,7 @@ POST {{host}}/messages
 content-type: application/json
 
 {
-  "content": "hi there"
+  "content": "scorpion"
 }
 
 
