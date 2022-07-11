@@ -16,6 +16,5 @@ content-type: application/json
   "content": "scorpion"
 }
 
-
 ### Get a particular message
 GET {{host}}/messages/123

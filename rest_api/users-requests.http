@@ -1,0 +1,12 @@
+@devUrl = http://localhost:3000
+@prodUrl = http://localhost:3000
+@host = {{devUrl}}
+
+### Create a new user
+POST {{host}}/auth/signup
+content-type: application/json
+
+{
+  "email": "scorpion@nrs.com",
+  "password": "getoverhere123"
+}
