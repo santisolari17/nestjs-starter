@@ -14,7 +14,7 @@ interface ClassConstructor {
   new (...args: any[]);
 }
 
-export function Serialize(dto: ClassConstructor) {
+export function SerializeResponseAs(dto: ClassConstructor) {
   return UseInterceptors(new SerializeInterceptor(dto));
 }
 
