@@ -7,9 +7,27 @@ POST {{host}}/auth/signup
 content-type: application/json
 
 {
-  "email": "subzero@nrs.com",
-  "password": "askformercy"
+  "email": "kano@nrs.com",
+  "password": "wherekane"
 }
+
+### signin user
+POST {{host}}/auth/signin
+content-type: application/json
+
+{
+  "email": "kano@nrs.com",
+  "password": "wherekane"
+}
+
+### signout user
+POST {{host}}/auth/signout
+content-type: application/json
+
+### who am I
+GET {{host}}/auth/whoami
+content-type: application/json
+
 
 ### find user by id
 GET {{host}}/auth/1
