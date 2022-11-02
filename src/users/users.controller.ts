@@ -52,8 +52,7 @@ export class UsersController {
 
   @Get('/whoami')
   @UseGuards(AuthenticationGuard)
-  public async whoAmI(@Session() session: any, @CurrentUser() user: User) {
-    // return await this.usersService.findOne(session.userId);
+  public async whoAmI(@CurrentUser() user: User) {
     return user;
   }
 
