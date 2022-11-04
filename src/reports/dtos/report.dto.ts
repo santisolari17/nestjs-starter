@@ -27,6 +27,9 @@ export class ReportDto {
   @Expose()
   mileage: number;
 
+  @Expose()
+  approved: boolean;
+
   @Transform((params) => {
     const reportData: Report = params.obj;
     return reportData.user.id;

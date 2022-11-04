@@ -7,11 +7,23 @@ POST {{host}}/reports
 content-type: application/json
 
 {
-  "make": "toyota",
-  "model": "corolla",
-  "year":  1980,
-  "mileage": 100000,
-  "longitude": 0,
-  "latitude": 0,
-  "price": 70000
+  "make": "ford",
+  "model": "mustang",
+  "year": 1982,
+  "mileage": 50000,
+  "longitude": 45,
+  "latitude": 45,
+  "price": 20000
 }
+
+### change report approval
+PATCH {{host}}/reports/5
+content-type: application/json
+
+{
+  "approved": true
+}
+
+### get estimate
+GET {{host}}/reports?make=ford&model=mustang&latitude=42&longitude=42&mileage=20000&year=1981
+content-type: application/json
