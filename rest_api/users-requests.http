@@ -7,8 +7,8 @@ POST {{host}}/auth/signup
 content-type: application/json
 
 {
-  "email": "cetrion@nrs.com",
-  "password": "imbroken"
+  "email": "kano@nrs.com",
+  "password": "wherekane"
 }
 
 ### signin user
@@ -16,8 +16,8 @@ POST {{host}}/auth/signin
 content-type: application/json
 
 {
-  "email": "cetrion@nrs.com",
-  "password": "imbroken"
+  "email": "kano@nrs.com",
+  "password": "wherekane"
 }
 
 ### signout user

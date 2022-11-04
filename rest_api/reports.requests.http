@@ -1,0 +1,17 @@
+@devUrl = http://localhost:3000
+@prodUrl = http://localhost:3000
+@host = {{devUrl}}
+
+### create report
+POST {{host}}/reports
+content-type: application/json
+
+{
+  "make": "toyota",
+  "model": "corolla",
+  "year":  1980,
+  "mileage": 100000,
+  "longitude": 0,
+  "latitude": 0,
+  "price": 70000
+}
