@@ -7,6 +7,6 @@ async function bootstrap() {
   // app.use(cookieSession({ keys: ['encryptionString'] })); // set in AppModule.configure()
   // app.useGlobalPipes(new ValidationPipe({ whitelist: true }));  // set in appmodule
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
