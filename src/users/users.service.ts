@@ -19,7 +19,7 @@ export class UsersService {
       return null;
     }
 
-    return await this._repo.findOneBy({ id });
+    return await this._repo.findOne(id);
   }
 
   public async find(email: string) {
